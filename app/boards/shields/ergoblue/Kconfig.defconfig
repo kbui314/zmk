@@ -1,0 +1,26 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_ERGOBLUE_CENTRAL
+
+config ZMK_KEYBOARD_NAME
+	default "ErgoBlue"
+
+endif
+
+if SHIELD_ERGOBLUE_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "ErgoBlue Left"
+
+endif
+
+if SHIELD_ERGOBLUE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "ErgoBlue Right"
+
+endif
+
+config ZMK_SPLIT
+	default y
