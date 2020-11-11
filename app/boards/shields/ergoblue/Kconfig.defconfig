@@ -8,19 +8,5 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
-if SHIELD_ERGOBLUE_LEFT
-
-config ZMK_KEYBOARD_NAME
-	default "ErgoBlue Left"
-
-endif
-
-if SHIELD_ERGOBLUE_RIGHT
-
-config ZMK_KEYBOARD_NAME
-	default "ErgoBlue Right"
-
-endif
-
 config ZMK_SPLIT
 	default y
