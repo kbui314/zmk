@@ -378,6 +378,12 @@ static struct bt_conn_cb conn_callbacks = {
 };
 
 int zmk_split_bt_central_init(struct device *_arg) {
+	// TODO TODO TODO explain - essentially if user runs this twice, the new
+	// bond will be saved on peripheral.
+#if IS_ENABLED(CONFIG_ZMK_BLE_CLEAR_BONDS_ON_START)
+	return 0;
+#endif
+
 	// Initialize array for state of peripheral keys. Set each to 255, which
 	// signifies that the key is released.
 	memset(position_state, 255, 8*POSITION_STATE_DATA_LEN);
